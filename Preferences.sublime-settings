@@ -1,0 +1,67 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete": false,
+	"bold_folder_labels": true,
+	"caret_style": "solid",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.pid",
+		"*.pyc"
+	],
+	"find_selected_text": true,
+	"fold_buttons": false,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"__pycache__",
+		"env",
+		"env3"
+	],
+	"font_options":
+	[
+		"gray_antialias",
+		"subpixel_antialias"
+	],
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"material_theme_accent_indigo": true,
+	"material_theme_accent_scrollbars": true,
+	"material_theme_appbar_indigo": true,
+	"material_theme_bold_tab": true,
+	"material_theme_bullet_tree_indicator": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_autowidth": true,
+	"material_theme_tabs_separator": true,
+	"meaterial_theme_tree_headings": true,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		80
+	],
+	"scroll_past_end": false,
+	"show_full_path": true,
+	"show_minimap": false,
+	"tab_size": 4,
+	"theme": "Material-Theme-Palenight.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
+	"word_wrap": false,
+	"wrap_width": 80
+}
