@@ -2,8 +2,8 @@
 cat /etc/motd
 
 # Aliases
-alias py='python2'
-alias py3='python3'
+alias py2='python2'
+alias py='python3'
 alias g='git'
 alias p2='pip2 install'
 alias p3='pip3 install'
@@ -17,9 +17,10 @@ alias getIP='wget http://ipinfo.io/ip -qO -'
 alias vt="vim ~/.tmux.conf.local"
 alias vv="vim ~/.vimrc"
 alias tnew="tmux new -s"
+alias gpsu="git push --set-upstream origin master"
 
 # My PATH
-export PATH=/home/israel/bin:/home/israel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$PATH
+export PATH=/home/israel/bin:/home/israel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/israel/.composer/vendor/bin:/usr/local/cuda-8.0/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/israel/.oh-my-zsh
@@ -27,6 +28,8 @@ export ZSH=/home/israel/.oh-my-zsh
 # Environment Variables
 export SERVICE_ENVIRONMENT=Development
 export LANG="en_US.UTF-8"
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
