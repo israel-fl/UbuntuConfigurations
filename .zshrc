@@ -12,25 +12,35 @@ alias v='vim'
 alias lsa='ls -a'
 alias vz='vim ~/.zshrc'
 alias net="nethog enp3s0"
-alias ssponder='sudo killall openvpn'
 alias getIP='wget http://ipinfo.io/ip -qO -'
 alias vt="vim ~/.tmux.conf.local"
 alias vv="vim ~/.vimrc"
 alias tnew="tmux new -s"
-alias gpsu="git push --set-upstream origin master"
+alias actpy="act && py wsgi.py"
+alias wactpy="cd ~/Documents/Rive/Website && actpy"
+alias aactpy="cd ~/Documents/Rive/Api && actpy"
+alias killmysql="kill -9 $(pgrep mysql-workbench)"
+export JAVA_HOME="usr/local/bin/android-studio/jre/bin"
 
 # My PATH
-export PATH=/home/israel/bin:/home/israel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/israel/.composer/vendor/bin:/usr/local/cuda-8.0/bin:$PATH
+export PATH=/home/israel/bin:/home/israel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/israel/.composer/vendor/bin:$JAVA_HOME:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/israel/.oh-my-zsh
 
-# Environment Variables
-export SERVICE_ENVIRONMENT=Development
-export LANG="en_US.UTF-8"
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export EDITOR="usr/bin/vim"
 
+export JAVA_HOME="/usr/local/bin/android-studio/jre"
 
+# Development variables
+export SERVICE_MODE="DEVELOPMENT"
+#export SERVICE_MODE="PRODUCTION"
+export CONSUL_HOST="localhost"
+export CONSUL_PORT="8500"
+export API_HEALTHCHECK_PORT="5000"
+export API_HEALTHCHECK="localhost:5000/healthcheck"
+export WEBSITE_HEALTHCHECK_PORT="8000"
+export WEBSITE_HEALTHCHECK="localhost:8000/healthcheck"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -113,5 +123,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -e $HOME/Documents/Scripts/Undistract/notifyosd.zsh ] && . $HOME/Documents/Scripts/Undistract/notifyosd.zsh
+[ -e $HOME/bin/notifyosd.zsh ] && . $HOME/bin/notifyosd.zsh
 
